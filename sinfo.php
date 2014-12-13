@@ -189,7 +189,7 @@ function displayData(dataJSON)
 		<font color='#333333'><span id="useSpace"> <?php echo $du;?></span></font>G Used,
 		<font color='#333333'><span id="freeSpace"><?php echo $df;?></span></font>G Available
 				<div class="progress">
-  <div class="progress-bar progress-bar-info" id="barhdPercent" aria-valuenow="<?php echo $hdPercent;?>" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $hdPercent;?>%%;"><span id="hdPercent"><?php echo $hdPercent;?></span>%
+  <div class="progress-bar progress-bar-info" id="barhdPercent" aria-valuenow="<?php echo $hdPercent;?>" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $hdPercent;?>%;"><span id="hdPercent"><?php echo $hdPercent;?></span>%
 </div>
   </div>
 
@@ -210,7 +210,7 @@ foreach ($tmp AS $v) {
           <font color='#CC0000'><span id="FreeMemory"><?php echo $mf;?></span></font>
 		  
 	<div class="progress progress-striped active">
-	<div class="progress-bar" id="barmemPercent" aria-valuenow="<?php echo $memPercent?>" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $memPercent?>%%">
+	<div class="progress-bar" id="barmemPercent" aria-valuenow="<?php echo $memPercent?>" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $memPercent?>%">
   <span id="memPercent"><?php echo $memPercent;?></span>
   </div>
 </div>
@@ -222,7 +222,7 @@ if($sysInfo['memCached']>0)
 		  Cache Memory <span id="CachedMemory"><?php echo $mc;?></span>
 		| Buffers  <span id="Buffers"><?php echo $mb;?></span>
 		  <div class="progress progress-striped active">
-  <div class="progress-bar progress-bar-success"  id="barmemCachedPercent" style="width: <?php echo $memCachedPercent?>%%">
+  <div class="progress-bar progress-bar-success"  id="barmemCachedPercent" style="width: <?php echo $memCachedPercent?>%">
             <span id="memCachedPercent"><?php echo $memCachedPercent;?></span>%
   </div>
 </div>
@@ -233,7 +233,7 @@ if($sysInfo['memCached']>0)
           <span id="memRealFree"><?php echo $memRealFree;?></span>
 
 		 <div class="progress progress-striped active">
-  <div class="progress-bar progress-bar-info" id="barmemRealPercent" style="width: <?php echo $memRealPercent?>%%">
+  <div class="progress-bar progress-bar-info" id="barmemRealPercent" style="width: <?php echo $memRealPercent?>%">
   <span id="memRealPercent"><?php echo $memRealPercent;?></span>%
   </div>
 </div>
@@ -250,7 +250,7 @@ if($sysInfo['swapTotal']>0)
           , Free
           <span id="swapFree"><?php echo $sf;?></span>
 		  <div class="progress progress-striped active">
-  <div class="progress-bar progress-bar-danger"  id="barswapPercent" style="width: <?php echo $swapPercent?>%%">
+  <div class="progress-bar progress-bar-danger"  id="barswapPercent" style="width: <?php echo $swapPercent?>%">
   <span id="swapPercent"><?php echo $swapPercent;?></span>%
   </div>
 </div>
