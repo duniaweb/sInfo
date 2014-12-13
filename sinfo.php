@@ -10,8 +10,8 @@ include "tz.php"
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="Baguz Ach.">
-<link rel="stylesheet" href="http://bootswatch.com/simplex/bootstrap.css">
-<script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="//bootswatch.com/simplex/bootstrap.css">
+<script src="//goez.my.id/bootstrap/dist/js/bootstrap.min.js"></script>
 <script language="JavaScript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
 <script type="text/javascript"> 
 <!--
