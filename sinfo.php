@@ -1,18 +1,20 @@
 <?php
 include "tz.php"
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en-US">
 <head>
 <title>sInfo</title>
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="Baguz Ach.">
-<link rel="stylesheet" href="//bootswatch.com/simplex/bootstrap.css">
-<script src="//goez.my.id/bootstrap/dist/js/bootstrap.min.js"></script>
-<script language="JavaScript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+<meta name="robots" content="noindex,nocache,follow">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/simplex/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
 <script type="text/javascript"> 
 <!--
 $(document).ready(function(){getJSONData();});
@@ -105,9 +107,6 @@ function displayData(dataJSON)
 </head>
  <body role="document" id="top">
 
-    <!-- Fixed navbar -->
-    <!-- Fixed navbar -->
-        <!-- Fixed navbar -->
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -117,11 +116,12 @@ function displayData(dataJSON)
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand"><img src="//goez.my.id/goez-eggo.png" alt="gœz" title="g0eZ egGo" width="25" hight="25"/></a>
+          <a class="navbar-brand" href="/"><i class="fa fa-server"></i></a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li><a class="goez" href="/">Home</a></li>
+                <li><a class="goez fa fa-home active" href="/"> Home</a></li>
+                <li><a class="fa fa-code-fork" href="https://github.com/eggoez/sInfo"> Fork</a></li>
 					</ul> 
         </div>
         </div>
@@ -301,6 +301,7 @@ foreach ($able as $key=>$value) {
 	echo "$value,&nbsp;";
 }
 ?>
+ </p>
  </a>
  </div>
 <div class="list-group">
@@ -631,7 +632,10 @@ else
 <div class="list-group">
   <a href="#spt" class="list-group-item">
     <h4 class="list-group-item-heading" id="spt">Server Performance Test</h4>
-</a>	  </div>
+	</a>
+</div>
+</form>
+
 
 <table class="table table-striped table-hover ">
   <tbody>
@@ -831,9 +835,9 @@ else
   ?>
     	  </tbody>
 </table>
-<hr /><center><p>
-<small><?php $run_time = sprintf('%0.4f', microtime_float() - $time_start);?>Processed in <font color='red'><?php echo $run_time?></font> seconds. <font color='red'><?php echo memory_usage();?> </font>memory usage.</small><br />
-Tweek By <a href="http://yahei.net" target="_new">Yahei.Net</a> | Awensome By <a href="http://goez.my.id">Me</a>.<br /><a href="#top">TOP!</a></p>
-</center>
+<hr />
+<h6 class="text-center"><?php $run_time = sprintf('%0.4f', microtime_float() - $time_start);?>Processed in <font color='red'><?php echo $run_time?></font> seconds. <font color='red'><?php echo memory_usage();?> </font>memory usage.<br />
+Tweek By <a href="http://yahei.net" target="_new">Yahei.Net</a> | Awensome By <a href="http://goez.my.id">Me</a>.<br /><a href="#top">TOP!</a></h6>
+</div>
 </body>
 </html>
