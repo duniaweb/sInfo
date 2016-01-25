@@ -10,4 +10,6 @@ I'm Just Change Awensome Display using BootStrap mod by BootSwatch</br >
 Credit & Thanks<br />
 ======
 <a href="http://Yahei.Net">Yahei.net</a><br />
+<a href="http://cdnjs.com">CDN JS</a><br />
 <a href="http://BootSwatch.com">BootSwatch.com</a>
+
