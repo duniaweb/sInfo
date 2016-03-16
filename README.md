@@ -1,7 +1,8 @@
 sInfo
 =====
 
-PHP Print Info About your Server
+PHP Print Info About your Server<br />
+By default this <code>"noindex"</code> by robots, you can remove it on <code>sinfo.php</code> files<br />
 
 ======
 This Tweek is Orginal Script by <a href="http://Yahei.Net">PHP-Yahei</a><br />
