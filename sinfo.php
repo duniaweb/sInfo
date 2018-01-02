@@ -1,4 +1,4 @@
-<?php
+<?
 include "tz.php"
 ?>
 <!DOCTYPE html>
@@ -12,9 +12,8 @@ include "tz.php"
 <meta name="robots" content="noindex,nocache,follow">
 <link rel="icon" href="favicon.ico" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/simplex/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <script type="text/javascript"> 
 <!--
@@ -107,7 +106,6 @@ function displayData(dataJSON)
 </script>
 </head>
  <body role="document" id="top">
-
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -117,17 +115,17 @@ function displayData(dataJSON)
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/"><i class="fa fa-server"></i></a>
+          <a class="navbar-brand" href="/"><i class="glyphicon glyphicon-hdd text-success"></i></a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li><a class="goez fa fa-home active" href="/"> Home</a></li>
-                <li><a class="fa fa-code-fork" href="https://github.com/eggoez/sInfo"> Fork</a></li>
+                <li class="active"><a class="goez glyphicon glyphicon-home" href="/"> Home</a></li>
+                <li><a class="glyphicon glyphicon-console" href="https://github.com/eggoez/sInfo"> Fork</a></li>
 					</ul> 
         </div>
         </div>
         </div>
-    <div class="container theme-showcase" style="padding: 28px 3px 5px 5px;">
+    <div class="container theme-showcase" style="margin-top: 35px;">
 <h1>Server Parameters</h1>
 <div class="list-group">
 <table class="table table-striped table-hover ">
